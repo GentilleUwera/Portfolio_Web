@@ -1,0 +1,145 @@
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f9;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #555;
+}
+
+/* Admin List Styles */
+.admin-list {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.admin-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.admin-list li {
+  padding: 10px 0;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.admin-list li:last-child {
+  border-bottom: none;
+}
+
+.admin-list a {
+  text-decoration: none;
+  color: #3f51b5;
+  font-size: 1.1rem;
+}
+
+.admin-list a:hover {
+  text-decoration: underline;
+}
+
+.admin-list button {
+  padding: 10px 20px;
+  background-color: #5c6bc0;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.admin-list button:hover {
+  background-color: #3f51b5;
+  transform: scale(1.05);
+}
+
+/* Dark Mode Styles */
+body.dark-theme {
+  background-color: #333;
+  color: white;
+}
+
+body.dark-theme .admin-list {
+  background-color: #444;
+}
+
+body.dark-theme .admin-list li {
+  border-bottom: 1px solid #555;
+}
+
+body.dark-theme .admin-list a {
+  color: #bb86fc;
+}
+
+body.dark-theme .admin-list button {
+  background-color: #444;
+  color: white;
+}
+
+body.dark-theme .admin-list button:hover {
+  background-color: #666;
+}
+
+/* Light Mode Styles */
+body.light-theme {
+  background-color: #f4f4f9;
+  color: black;
+}
+
+body.light-theme .admin-list {
+  background-color: white;
+}
+
+body.light-theme .admin-list li {
+  border-bottom: 1px solid #ddd;
+}
+
+body.light-theme .admin-list a {
+  color: #3f51b5;
+}
+
+body.light-theme .admin-list button {
+  background-color: #5c6bc0;
+  color: white;
+}
+
+body.light-theme .admin-list button:hover {
+  background-color: #3f51b5;
+}
